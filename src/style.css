@@ -1,0 +1,113 @@
+body {
+  background-color: #092820;
+  margin: 0px;
+  color: white;
+}
+
+.navbar {
+  background-color: #092820;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+button {
+  margin-right: 40px;
+  padding: 10px;
+  height: 40px;
+  width: 100px;
+}
+
+li button {
+  background-color: #092820;
+  font-size: 15px;
+  margin-left: 35px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+li button:hover {
+  color: #fff;
+  text-shadow: 0 0 7px rgba(0, 255, 170, 0.685),
+    0 0 10px rgba(0, 255, 170, 0.575), 0 0 21px #ffffffad, 0 0 42px #0fa,
+    0 0 82px rgba(0, 255, 170, 0.631), 0 0 92px rgba(0, 255, 170, 0.699),
+    0 0 102px rgba(0, 255, 170, 0.51), 0 0 151px rgba(0, 255, 170, 0.669);
+}
+
+.find-us {
+  background-color: #092820;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whats-on {
+  border-radius: 8px;
+  border: white;
+  color: #092820;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.find-us:hover {
+  box-shadow: 0 1px 10px 5px rgba(0, 255, 170, 0.335);
+}
+.whats-on:hover {
+  box-shadow: 0 1px 10px 5px rgba(0, 255, 170, 0.335);
+}
+
+.homepage-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+.about-sallys {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  padding-top: 150px;
+}
+.about-sallys {
+  line-height: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+gmp-map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
