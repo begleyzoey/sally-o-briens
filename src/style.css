@@ -92,11 +92,22 @@ h1,
 }
 
 h1 {
-  padding-top: 150px;
   width: 100%;
+  letter-spacing: 2.5px;
 }
 .about-sallys {
-  line-height: 35px;
-
+  line-height: 1.25em;
   width: 100%;
+  letter-spacing: 0.5px;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.food-menu {
+  display: block;
+  max-width: 100px;
+  position: relative;
+  left: 30px;
 }
