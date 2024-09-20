@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqCdzKBQybTG_GA7FFwXs1103Pqe1y9xg&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="icon" href="logo-icon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sally O'Briens</title>
   </head>
-  <body></body>
+  <body>
+    <gmp-map
+      center="50.09904098510742,14.427631378173828"
+      zoom="14"
+      map-id="DEMO_MAP_ID"
+    >
+      <gmp-advanced-marker
+        position="50.09904098510742,14.427631378173828"
+        title="My location"
+      ></gmp-advanced-marker>
+    </gmp-map>
+  </body>
 </html>
