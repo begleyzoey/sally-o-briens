@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqCdzKBQybTG_GA7FFwXs1103Pqe1y9xg&callback=console.debug&libraries=maps,marker&v=beta"
     ></script>
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/find-us.css" />
     <link rel="icon" href="logo-icon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sally O'Briens</title>
   </head>
-  <body>
-    <gmp-map
-      center="50.09904098510742,14.427631378173828"
-      zoom="14"
-      map-id="DEMO_MAP_ID"
-    >
-      <gmp-advanced-marker
-        position="50.09904098510742,14.427631378173828"
-        title="My location"
-      ></gmp-advanced-marker>
-    </gmp-map>
+  <body class="contact-page-body">
+    <div class="contact-container">
+      <div class="contact-left">
+        <gmp-map
+          center="50.09904098510742,14.427631378173828"
+          zoom="14"
+          map-id="DEMO_MAP_ID"
+        >
+          <gmp-advanced-marker
+            position="50.09904098510742,14.427631378173828"
+            title="My location"
+          ></gmp-advanced-marker>
+        </gmp-map>
+      </div>
+
+      
+        <section class="contact-section">
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="8826c695-26da-4178-a8de-09c3b86c6f4a" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label"></label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label"></label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label"></label>
+        <input id="phone" name="phone" class="form-input" placeholder="+420563761625" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label"></label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+
+</section>
   </body>
 </html>
